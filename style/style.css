@@ -71,6 +71,7 @@ ul{
     padding: 30px 15px;
     transition: width 300ms;
     overflow: hidden;
+    z-index:999;
 }
 
 .aside:hover {
@@ -271,10 +272,11 @@ ul{
     align-items: center;
 }
 
-.footer {
+.map {
     background: #3FA5D5;
     padding: 40px 0;
-    margin-top: 44px ;
+    margin-top: 50px ;
+    border-radius: 10px;
 }
 
 .footer__left-title {
@@ -284,18 +286,16 @@ ul{
     font-family: "RB";
 }
 
-.footer__text {
+.map__left {
+    row-gap: 50px;
+}
+.map__text {
     color: white;
     font-family: "RB";
 }
 
-.footer__right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
-.footer__right-number {
+.map__right-number {
     font-size: 18px;
     line-height: 21px;
     color: white;
@@ -308,4 +308,26 @@ ul{
     line-height: 19px;
     color: white;
  
+}
+
+.footer-icon {
+    font-size: 40px;
+    color: grey;
+    transition: color 300ms;
+}
+
+.footer-icon:hover {
+    color: #3FA5D5;
+}
+
+.footer__icons {
+    display: flex;
+    column-gap: 30px;
+}
+
+
+.footer {
+    padding: 50px;
+    background: white;
+    border-radius: 10px;
 }
