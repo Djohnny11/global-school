@@ -226,7 +226,6 @@ ul{
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 370px;
     row-gap: 30px;
-    margin-top: 50px;
     margin-bottom: 50px;
     place-items: center;
     
@@ -387,6 +386,17 @@ ul{
 .tab-content {
     margin: 0 auto;
 }
+
+.title1 {
+    padding:25px;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: justify;
+    color: #545454;
+    text-align: center;
+    
+}
+
 @media(max-width:1360px) {
     .aside {
         width: 100%;
@@ -494,6 +504,9 @@ ul{
 @media(max-width:416px) {
     .aside__menu-link {
         display: none;
+    }
+    .aside {
+        row-gap: 0;
     }
     .footer-text {
         font-size: 15px;
