@@ -52,7 +52,6 @@ ul{
 .btn:hover {
     background: #055478;
 }
-
 .navbar {
     display: none;
 }
@@ -76,6 +75,7 @@ ul{
 
 .aside:hover {
     width: 200px;
+    
 }
 
 .aside__menu-link {
@@ -83,13 +83,16 @@ ul{
     transition: color 300ms;
     display: flex;
     align-items: center;
-    margin-bottom: 55px;
+    
     margin-left: 20px;
 }
 
-.aside__menu-link:hover {
-    color: #2A86B1;
+.aside__menu {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
 }
+
 
 .aside__photo {
     font-size: 25px;
@@ -108,6 +111,7 @@ ul{
 
 .header__content {
     height: 500px;
+    width: 100%;
     background: url(../image/header-bg.png) no-repeat center /cover white;
     border-radius: 14px;
     /* opacity: 0.5; */
@@ -119,11 +123,11 @@ ul{
 }
 
 .header__content-title {
-    font-size: 50px;
-    line-height: 59px;
+    font-size:45px;
+    line-height: 50px;
     color:#464748;
     font-family: "RB";
-    max-width: 332px;
+    max-width: 450px;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -159,21 +163,56 @@ ul{
     background: white;
     border-radius: 15px;
     max-width: 255px;
+    border: 3px solid #2A86B1;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     padding: 30px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
 }
 
+.main__top {
+    width: 100%;
+    justify-content: center;
+}
 .main__top-title {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
     color:#2A86B1;
     font-family: "RB";
-    margin-bottom: 60px;
+    align-items: center;
+    margin:0 0 0 0;
+    background: white;
+    border-radius: 10px;
+    padding: 1px 3px;
+    
+
+}
+
+.main1 {
+    background: url(../image/english23.webp) no-repeat center /cover;
+}
+.main2 {
+    background: url(../image/screenshot.9.jpg) no-repeat center /cover;
+}
+.main3 {
+    background: url(../image/mathbg.jpg) no-repeat center /cover;
+}
+.main4 {
+    background: url(../image/ielts_girl.png) no-repeat center /cover;
+}
+.mental__arf {
+    text-align: center;
+}
+
+.mental__arf1 {
+    background: url(../image/abacus.png) no-repeat center /cover;
+}
+
+.main5 {
+    background: url(../image/почемучка1.jpg) no-repeat center /cover;
 }
 
 .main__top-item i {
@@ -184,11 +223,13 @@ ul{
 
 .main__top {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 370px;
     row-gap: 30px;
-    
     margin-top: 50px;
     margin-bottom: 50px;
+    place-items: center;
+    
     
 }
 
@@ -210,8 +251,11 @@ ul{
     line-height: 24px;
     color:#686868;
     font-family: "RB";
-    margin-bottom: 20px;
-    margin-left: 20px;
+
+}
+
+.for__media {
+    display: none !important;
 }
 
 .main__left-text {
@@ -249,7 +293,7 @@ ul{
     font-size: 17px;
     line-height: 94.5%;
     color: #323232;
-    margin-bottom: 5px;
+
 }
 
 .main__bottom-info p {
@@ -326,8 +370,87 @@ ul{
 }
 
 
+
 .footer {
     padding: 50px;
     background: white;
     border-radius: 10px;
+}
+
+.map__map {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 10px;
+    margin: 0 auto;
+}
+
+.tab-content {
+    margin: 0 auto;
+}
+@media(max-width:1360px) {
+    .aside {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .aside:hover {
+        width: 100%;
+    }
+    .aside__menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin:0;
+        align-items: center;
+        flex-direction: row;
+    }
+    .aside__menu-link {
+        margin:0;
+    }
+    .header {
+        margin-top: 125px;
+    }
+    
+}
+
+@media(max-width:1200px) {
+    .for__media {
+        display: block !important;
+        margin-bottom: 30px;
+        justify-content: center !important;
+
+        
+    }
+    .to_hide_media {
+        display: none !important;
+    }
+
+
+
+    .list-group-item {
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media(max-width:860px) {
+    .main__top {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);     
+    }
+    .map__text {
+        text-align: center;
+    }
+}
+
+@media(max-width:800px) {
+    .phone_link {
+        display: none;
+    }
+
 }
